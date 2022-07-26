@@ -1,0 +1,68 @@
+Database status and flags ad their meaning.
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+
+
+1. User Table
+	gender -> 
+		0->not specified
+		1->male
+		2->female
+		3->others
+	verifcatio_status ->
+		0-> not verified
+		1-> Verified
+
+
+2. Admin Table
+	level ->
+		0 -> Admin
+		1 -> Service Manager
+		2 -> Order Manager
+	created_by ->
+		0 -> By System
+		any other int -> by that id.
+
+
+3.Clothes Table
+	cloth_type
+		1->man
+		2->women
+		3->household
+		4->kids
+4. Biker Table
+	biker_status ->
+		0->Idle
+		1->On Duty
+		2->Unavailable
+
+5. Order Table
+	cloth_status ->
+		0 -> cloth with customer
+		1 -> cloth assigned to biker for pickuup
+		2 -> cloth with franchise before wash
+		3 -> cloth deliverd to warehouse
+		4 -> cloth with franchise after wash
+		5 -> cloth assigned to biker for delivery
+		6 -> cloth deliverd succesfully
+
+	Payment status ->
+		1 -> Pending
+		2 -> Payed
+
+	Payment Mode ->
+		1 -> COD
+		2 -> Online
+
+5. User Table
+	gender ->
+		0 -> Dont Want to specify
+		1 -> Male
+		2 -> Female
+		3 -> Others
+
+5. Basket Table
+	status ->
+		1 -> On Cart
+		2 -> Ordered
+		

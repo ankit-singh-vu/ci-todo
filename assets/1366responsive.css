@@ -1,0 +1,4 @@
+@media only screen and (max-width: 1400px) and (min-width: 1300px) {
+  .dog-slide .left-content{left: 138px;}
+  .dog-slide .right-content{right: 115px;  width: 35%; height:535px ;}
+}
